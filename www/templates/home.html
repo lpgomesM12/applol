@@ -1,0 +1,42 @@
+<ion-view title="Notas">
+  <ion-nav-buttons side="right">
+    <a class="button button-clear button-positive" href="#/nota">
+      <i class="icon ion-plus custom-icon"></i>
+    </a>
+
+  </ion-nav-buttons>
+  
+  <div class="bar bar-subheader">
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <input type="search" placeholder="Pesquisa" ng-model="valor">
+      </label>
+        <button class="button button-clear" ng-click="pesquisaNotas()">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+         </button>
+    </div>
+  </div>
+
+  <ion-content padding="true" class="topNota">
+      <div class="list card" ng-repeat="nota in notas" ng-click="openNota(nota.id)" ng-class="{'color-ativo': nota.status == 'Ativa', 'color-inativo': nota.status == 'Inativa', 'color-rascunho': nota.status == 'Rascunho' }">
+        <div class="item item-icon-right">
+          <div class="row title-card">
+            <div class="col col-80">
+              <h2 class="notTitulo">{{nota.titulo}}</h2>
+            </div>
+            <div class="col">
+             <small class="data-visualisacao">{{nota.date_visualizacao}}</small>
+            </div>
+          </div>
+           <p>{{nota.texto}}</p>
+
+           <p>
+             <a href="#" ng-if="nota.cont_visualizacao > 0" class="subdued ion-eye"> {{nota.cont_visualizacao}}</a>
+             <a href="#" ng-if="nota.tipo == 'privada'" class="subdued ion-locked"></a>
+             <a href="#" class="subdued">{{nota.status}}</a>
+             
+           </p>
+        </div>
+     </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,89 @@
+.top-card {
+border-top: 3px solid #4169E1;
+}
+
+.notTitulo {
+color: #4169E1;
+font-weight: 400 !important;
+margin-left: -10px !important;
+}
+
+.color-ativo{
+  border-top: 3px solid #32db64;
+}
+.color-inativo{
+  border-top: 3px solid #f53d3d;
+}
+.color-rascunho{
+  border-top: 3px solid #e7c720;
+}
+
+.data-visualisacao {
+font-size: 12px;
+color: #828282;
+}
+
+.icon-color {
+color: #4169E1 !important;
+}
+
+.title-card {
+ margin: -10px 0 -8px 0 !important;
+}
+
+.noteArea {
+  height: 100%;
+  width: 100%;
+}
+
+.noteTitulo {
+  height: 100%;
+  border-style: none;
+  padding: 10px 0 2px 1px;
+}
+
+.topNota{
+  padding-top: 40px;
+}
+
+.btnSubheader{
+  width: 50%;
+  padding-left: 50px;
+}
+
+.bar.bar-stable {
+  background-color: #00969f;
+  border: none;
+}
+
+.custom-title {
+  background-color: #FD3583;
+}
+
+i.icon-home::before {
+    margin: -30px 0 -8px 0 !important;
+    font-size: 15px;
+}
+
+.custom-icon {
+  color : #fff;
+}
+
+
+.bar.bar-stable .title {
+  color: #fff;
+  text-align: center;
+}
+
+.verde-padrao{
+  color : #00969f;
+}
+
+.item-divider {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 0px;
+    background-color: #fff;
+    color: #222;
+}
+
